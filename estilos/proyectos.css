@@ -1,87 +1,87 @@
 .logoPageMobile {
-	font-size: 6vh;
-	font-family: Gugi;
-	text-shadow: #b3b3b3 0.5vw 0.5vh;
+  font-size: 6vh;
+  font-family: Gugi;
+  text-shadow: #b3b3b3 0.5vw 0.5vh;
 }
 
 .proyectos {
-	display: grid;
-	grid-template-columns:  1fr;
-	column-gap: 2vw;
-	row-gap: 2vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2vw;
+  row-gap: 2vw;
 }
 
-.proyecto{
-    border: #ed088c 1px solid;
-    border-radius: 2vh;
-    padding: 1vh;
-    display: grid;
-    text-align: justify;
-	font-size: 0.9rem;
-	line-height: normal;
+.proyecto {
+  border: #ed088c 1px solid;
+  border-radius: 2vh;
+  padding: 1vh;
+  display: grid;
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: normal;
 }
 
-.proyecto h3{
-    text-align: center;
-	color: #ed088c;
+.proyecto h3 {
+  text-align: center;
+  color: #ed088c;
 }
-.tecnologias{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
-	padding: 1vh;
+.tecnologias {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1vh;
 }
-.tecnologias h3{
-	margin-top: 2vh;
+.tecnologias h3 {
+  margin-top: 2vh;
 }
-.tecnologias figure img{
-	max-width: 12vw;
-	max-height: 12vh;
+.tecnologias figure img {
+  max-width: 12vw;
+  max-height: 12vh;
 }
 .tecnologias a figure img {
-	max-width: 8vw;
-	max-height: 8vh;
+  max-width: 8vw;
+  max-height: 8vh;
 }
 
 @media screen and (min-width: 768px) {
-	.logoPage {
-		visibility: visible;
-		color: #333333;
-		font-family: Gugi;
-		font-size: 7vh;
-		font-weight: bolder;
-		text-transform: uppercase;
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
+  .logoPage {
+    visibility: visible;
+    color: #333333;
+    font-family: Gugi;
+    font-size: 7vh;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
-	.proyectos {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		column-gap: 1vw;
-		row-gap: 1vh;
-	}
-	.proyecto{
-		padding: 1vh;
-	}
-	.tecnologias{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-evenly;
-		padding: 1vh;
-	}
-	.tecnologias h3{
-		margin-top: 2vh;
-	}
-	.tecnologias figure img{
-		max-height: 7vh;
-	}
-	.tecnologias a figure img {
-		max-height: 4vh;
-	}
-
+  .proyectos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1vw;
+    row-gap: 1vh;
+  }
+  .proyecto {
+    padding: 1vh;
+  }
+  .tecnologias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1vh;
+  }
+  .tecnologias h3 {
+    margin-top: 2vh;
+  }
+  .tecnologias figure img {
+    max-height: 5vh;
+  }
+  .tecnologias a figure img {
+    max-height: 3vh;
+  }
+ 
 }

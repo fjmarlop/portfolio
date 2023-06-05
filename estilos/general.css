@@ -115,7 +115,7 @@ body {
 .contenedor {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 25% 1fr;
+	grid-template-rows: 20vh 1fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
     padding: 2vh;
