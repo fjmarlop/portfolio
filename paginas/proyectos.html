@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Fco Javier Marmolejo</title>
-    <link rel="stylesheet" href="./../estilos/general.css" />
-    <link rel="stylesheet" href="./../estilos/skill.css" />
-    <link rel="stylesheet" href="./../estilos/proyectos.css" />
-    <script src="./../js/script.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
 
-  <body>
-    <header class="main-header">
-      <a class="main-logo" href="#">
-        <strong> _Fjmarlop /> </strong>
-      </a>
-      <nav id="nav" class="main-nav">
-        <div class="nav-links">
-          <a class="link-item" href="/index.html">Inicio</a>
-          <a class="link-item" href="/paginas/skills.html">Skills</a>
-          <a class="link-item" href="/paginas/proyectos.html">Proyectos</a>
-          <a class="link-item" href="/paginas/informacion.html">Info</a>
-          <a class="link-item" href="/paginas/contacto.html">Contacto</a>
-        </div>
-      </nav>
-      <button id="boton" class="button-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-    <main>
+<head>
+  <title>Fco Javier Marmolejo</title>
+  <link rel="stylesheet" href="./../estilos/main.css" />
+  <link rel="stylesheet" href="./../estilos/proyectos.css" />
+  <script src="./../js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <header class="main-header">
+    <a class="main-logo" href="/index.html">
+      <strong> _Fjmarlop /> </strong>
+    </a>
+    <nav id="nav" class="main-nav">
+      <div class="nav-links">
+        <a class="link-item" href="/index.html">Inicio</a>
+        <a class="link-item" href="/paginas/skills.html">Skills</a>
+        <a class="link-item" href="/paginas/proyectos.html">Trabajos</a>
+        <a class="link-item" href="/paginas/informacion.html">Info</a>
+        <a class="link-item" href="/paginas/contacto.html">Contacto</a>
+      </div>
+    </nav>
+    <button id="boton" class="button-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+  <main class="contenedor">
+    <section class="contenedorSup">
       <!-- particles.js container -->
       <div id="particles-js"></div>
       <!-- scripts -->
@@ -38,44 +39,38 @@
       <script src="./../js/app.js"></script>
       <!-- stats.js -->
       <script src="./../js/lib/stats.js"></script>
-
-      <section class="contenedor">
-        <div class="contenedorIzq">
-          <div class="logoPageMobile">PROYECTOS</div>
-          <div class="logoPage">
-            P<br>R<br>O<br>Y<br>E<br>C<br>T<br>O<br>S
+      <div class="title">
+       trabajos
+      </div>
+    </section>
+    <section class="contenedorPrincipal">
+     
+     <div class="projects">
+       <!-- PORTFOLIO --> 
+      <div class="project">
+          <div class="contenedorLogo">
+            <figure><img src="./../recursos/image.png"></figure>
+            <h3>Portfolio</h3>
+          </div>
+          <article>
+            Portfolio personal donde muestro información sobre mis trabajos,
+            trayectoria profesional y formación académica.
+          </article>
+          <div class="tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
           </div>
         </div>
-        <div class="contenedorDer">
-          <div class="proyectos">
-            <div class="proyecto">
-              <div>
-                <h3>Portfolio</h3>
-                Portfolio personal donde muestro información sobre mis trabajos,
-                trayectoria profesional y formación académica.
-              </div>
-              <div class="verTecnologias">
-                <h3>Tecnologias</h3>
-                <div class="tecnologias">
-                  <figure><img src="./../recursos/html.png" /></figure>
-                  <figure><img src="./../recursos/css.png" /></figure>
-                  <figure><img src="./../recursos/js.png" /></figure>
-                </div>
-              </div>
-              <div class="VerEnlaces">
-                <h3>Enlaces</h3>
-                <div class="tecnologias">
-                  <a href="#"><figure><img src="./../recursos/enlace.png" /></figure></a>
-                  <a href="#"><figure><img src="./../recursos/github_b.png" /></figure></a>
-                </div>
-              </div>
-            </div>       
-        </div>
-        <div class="pasaPagina">
-          <a href="/paginas/informacion.html" class="link-item"
-            ><span>+ Info -></span></a>
-        </div>
-      </section>
-    </main>
-  </body>
+       <!-- SIGUIENTE PROYECTO --> 
+     </div>  
+   
+ </div> 
+    </section>
+  </main>
+  <footer>
+    <a href="/paginas/informacion.html" class="link-item"><span>+ Info -></span></a>
+  </footer>
+</body>
+
 </html>

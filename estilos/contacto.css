@@ -1,18 +1,96 @@
-.logoPageMobile {
-  font-size: 9vh;
-  font-family: Gugi;
-  text-shadow: #b3b3b3 1vw 0.8vh;
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .logoPage {
-    visibility: visible;
-    color: #333333;
-    font-family: Gugi;
-    font-size: 7vh;
-    font-weight: bolder;
-    text-transform: uppercase;
+
+.formulario input,
+textarea {
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  padding: 1vh;
+  border-radius: 2vw;
+  border: #b3b3b3 1px solid;
+  min-width: 90vw;
+}
+.formulario textarea {
+  min-height: 8vh;
+}
+
+#button {
+  background-color: #ed088c;
+  border: none;
+  color: white;
+  font-size: 2vh;
+  border-radius: 5vh;
+  padding: 1vh;
+  font-weight: bold;
+  font-family: Gugi;
+  letter-spacing: 0.5vw;
+  text-transform: uppercase;
+  min-width: 60vw;
+}
+
+.contenedorRedes {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logoredes {
+  max-width: 7vw;
+}
+
+.mensajeContacto {
+  text-align: justify;
+}
+.mensajeContacto p {
+  padding: 1vh;
+}
+.captcha {
+  margin-top: 1vh;
+}
+.g-recaptcha {
+  transform: scale(0.70);
+  -webkit-transform: scale(0.70);
+}
+
+@media screen and (min-width: 844px) {
+  .contenedorPrincipal {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    gap: 3vw;
+    align-items: center;
+  }
+  .formulario {
+    margin-left: 2vw;
+    flex-basis: 140vw;
+  }
+  .formulario textarea {
+    min-height: 12vh;
+    padding-left: 2vw;
+
+  }
+  .formulario input,
+  textarea {
+    min-width: 30vw;
+  }
+  #button {
+    min-width: 15vw;
+  }
+  .contenedorRedes {
+    margin-top: 2vh;
+  }
+  .logoredes {
+    max-width: 5vh;
+  }
+
+  .logoredes:hover {
+    padding: 1.5vh;
+  }
+  .g-recaptcha {
+    transform: scale(0.80);
+    -webkit-transform: scale(0.80);
+   
   }
 }

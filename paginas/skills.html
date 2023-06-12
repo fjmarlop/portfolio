@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <title>Fco Javier Marmolejo</title>
-    <link rel="stylesheet" href="./../estilos/general.css" />
+    <link rel="stylesheet" href="./../estilos/main.css" />
     <link rel="stylesheet" href="./../estilos/skill.css" />
     <script src="./../js/script.js"></script>
     <meta charset="UTF-8" />
@@ -11,14 +11,14 @@
 
   <body>
     <header class="main-header">
-      <a class="main-logo" href="#">
+      <a class="main-logo" href="/index.html">
         <strong> _Fjmarlop /> </strong>
       </a>
       <nav id="nav" class="main-nav">
         <div class="nav-links">
           <a class="link-item" href="/index.html">Inicio</a>
           <a class="link-item" href="/paginas/skills.html">Skills</a>
-          <a class="link-item" href="/paginas/proyectos.html">Proyectos</a>
+          <a class="link-item" href="/paginas/proyectos.html">Trabajos</a>
           <a class="link-item" href="/paginas/informacion.html">Info</a>
           <a class="link-item" href="/paginas/contacto.html">Contacto</a>
         </div>
@@ -29,22 +29,22 @@
         <span></span>
       </button>
     </header>
-    <main>
-      <!-- particles.js container -->
+    <main class="contenedor">
+      <section class="contenedorSup">
+              <!-- particles.js container -->
       <div id="particles-js"></div>
       <!-- scripts -->
       <script src="./../js/particles.js"></script>
       <script src="./../js/app.js"></script>
       <!-- stats.js -->
       <script src="./../js/lib/stats.js"></script>
-
-      <section class="contenedor">
-        <div class="contenedorIzq">
-          <div class="logoPageMobile">SKILLS</div>
-          <div class="logoPage">s<br />k<br />i<br />l<br />l<br />s</div>
-        </div>
-        <div class="contenedorDer">
-          public class Skills {<br />
+      <div class="title">
+        skills
+      </div>  
+    </section>
+     <section class="contenedorPrincipal">
+      <div>
+        public class TecnicalSkills {<br />
           <p class="tab">
             public static void <span class="resaltar">main</span> (String [ ]
             args) {
@@ -53,10 +53,10 @@
             <span style="color: #b3b3b3; padding-left: 2vw"
               >// Lenguajes de programación que conozco</span
             ><br />
-
+  
             String lenguajes [ ] = {
             <span style="word-spacing: 0.5vw"
-              >"Java", "JavaScript", "TypeScript", "C#", "Phyton", "Php", "SQL",
+              >"Java", "JavaScript", "TypeScript", "C#",<br> "Phyton", "Php", "SQL",
               "HTML", "CSS"</span
             >
             };<br />
@@ -90,13 +90,27 @@
           </p>
           <p class="tab">}</p>
           <p>}</p>
-          <div class="pasaPagina">
-            <a href="/paginas/proyectos.html" class="link-item"
-              ><span>Proyectos -></span></a
-            >
-          </div>
-        </div>
-      </section>
+      </div>
+      <div class="softSkills">
+        public class SoftSkills {<br>
+          <p class="tab">
+            public static void <span class="resaltar">main</span> (String [ ]
+            args) {
+          </p>
+          <br>
+          <p class="tab2">ArrayList < String > softSkills = <span class="resaltar">new</span> ArrayList< >();</p>
+          <p class="tab2">softSkills.<span class="resaltar">add</span>("Trabajo en equipo");</p>
+          <p class="tab2">softSkills.<span class="resaltar">add</span>("Comunicación");</p>
+          <p class="tab2">softSkills.<span class="resaltar">add</span>("Autoaprendizaje");</p>
+          <p class="tab2">softSkills.<span class="resaltar">add</span>("Resolución de problemas");</p>
+          <p class="tab2">softSkills.<span class="resaltar">add</span>("Trabajo bajo presión");</p>
+          <p class="tab">}</p>
+        <p>}</p>
+      </div>
+     </section> 
     </main>
+    <footer>
+      <a href="/paginas/proyectos.html" class="link-item"><span>Trabajos -></span></a>
+    </footer>
   </body>
 </html>
