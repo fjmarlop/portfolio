@@ -3,6 +3,7 @@ const inputName = document.getElementById('nombre');
 const inputEmail = document.getElementById('email');
 const txtMensaje = document.getElementById('mensaje');
 
+
 document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
@@ -14,13 +15,29 @@ document.getElementById('form')
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Enviar';
-      inputName.value = '';
-      inputEmail.value ='';
-      txtMensaje.value = '';
-      alert('Sent!');
+      limpiarCampos();
+     // alert('Sent!');
+      abrirVentanaModal();
     }, (err) => {
-      btn.value = 'Enviado';
-      alert(JSON.stringify(err));
+      document.getElementById("txtTitulo").innerHTML='ERROR';
+      document.getElementById("txtMensaje").innerHTML = 
+      '<b>¡ Tu mensaje NO se ha enviado correctamente !</b><p>' + JSON.stringify(err) + '</p>'
+      abrirVentanaModal();
     });
 });
+
+document.getElementById("cerrarModal").addEventListener("click", function(){
+  document.getElementsByClassName("fondo_transparente")[0].style.display="none"
+})
+
+function limpiarCampos(){
+  btn.value = 'Enviar';
+  inputName.value = '';
+  inputEmail.value ='';
+  txtMensaje.value = '';
+}
+
+function abrirVentanaModal(){
+  document.getElementsByClassName("fondo_transparente")[0].style.display="block"
+  return false
+}

@@ -17,6 +17,8 @@ hr {
     margin-top: 1vh;
 }
 @media screen and (min-width: 844px) {
+
+
   .contenedorPrincipal {
     display: flex;
     flex-direction: row;

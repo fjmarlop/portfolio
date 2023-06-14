@@ -82,6 +82,6 @@ SE CAMBIA A DISEÑO MOVIL CUANDO SEA MENOR DE 844px */
     }
 
     .logoredes:hover{ 
-        padding: 1.5vh;
+        transform: scale(1.5);
     }
 }

@@ -1,13 +1,13 @@
-.title{
+.title {
   font-size: 8vh;
 }
 
-.projects{
+.projects {
   display: flex;
   flex-direction: column;
   padding: 1vh;
 }
-.project{
+.project {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,7 @@
   padding-left: 1vw;
   padding-right: 2vw;
   text-align: center;
-  border: solid 1px #b3b3b3; 
+  border: solid 1px #b3b3b3;
   box-shadow: #b3b3b3 4px 4px;
   border-radius: 2vh;
   margin-bottom: 3vh;
@@ -25,15 +25,14 @@
   margin-top: 2vh;
   max-width: 20vw;
   border-radius: 100%;
-  
 }
-.contenedorLogo{
+.contenedorLogo {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-h3{
+h3 {
   color: #ed088c;
   font-size: 7vw;
   font-family: Gugi;
@@ -47,8 +46,8 @@ h3{
   display: flex;
   justify-content: space-evenly;
 }
-.tecnologias span{
-  color:#ed088c;
+.tecnologias span  {
+  color: #ed088c;
   font-weight: bold;
   border: #ed088c solid 1px;
   padding: 1vw;
@@ -57,32 +56,46 @@ h3{
   font-family: Gugi;
   font-size: 1rem;
 }
-
+.tecnologias a {
+  text-decoration: none;
+}
+.tecnologias a span{
+  border: #b3b3b3 solid 1px;
+  color: #333333;
+}
 
 @media screen and (min-width: 844px) {
- 
-.projects{
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-}
+  .title{
+    font-size: 15vh;
+  }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
-h3{
- font-size: 1.5vw;
-}
-.project{
-  max-width: 20%;
-}
+  h3 {
+    font-size: 1.5vw;
+  }
+  .project {
+    max-width: 15vw;
+  }
 
-.project img{
-  max-width: 8vh;
-}
-.tecnologias span{
- min-width: 3vw;
- padding: 0.5vh;
- font-size: 0.6vw;
-}
-.project article {
-  font-size: 1.5vh;
-}
+  .project img {
+    max-width: 8vh;
+  }
+  .tecnologias span {
+    min-width: 3vw;
+    padding: 0.5vh;
+    font-size: 0.6vw;
+  }
+  .tecnologias a span{
+    min-width: 3vw;
+    padding: 0.5vh;
+    font-size: 0.7vw;
+  }
+  .project article {
+    font-size: 1.5vh;
+  }
 }

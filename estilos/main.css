@@ -144,7 +144,7 @@ SE CAMBIA A DISEÑO MOVIL CUANDO SEA MENOR DE 844px */
 .title {
   font-size: 10vh;
   font-family: Gugi;
-  text-shadow: #b3b3b3 0.5vw 1vh;
+  /*text-shadow: #b3b3b3 0.5vw 1vh;*/
   text-transform: uppercase;
   text-align: center;
 }
@@ -175,6 +175,10 @@ footer {
 
 /* EN ESTA PARTE HAREMOS EL DISEÑO A PANTALLA MAYORES */
 @media screen and (min-width: 844px) {
+  .title{
+    font-size: 15vh;
+  }
+
   .button-menu {
     display: none;
   }
