@@ -8,7 +8,7 @@ SE CAMBIA A DISEÑO MOVIL CUANDO SEA MENOR DE 844px */
 .titulo{
     color: #ed088c;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 1.5rem;
     text-align: center;
 }
 .contenedorImagen figure{
@@ -58,6 +58,9 @@ SE CAMBIA A DISEÑO MOVIL CUANDO SEA MENOR DE 844px */
 /* EN ESTA PARTE HAREMOS EL DISEÑO A PANTALLA MAYORES */
 @media screen and (min-width: 844px) {
 
+    .titulo{
+        font-size: 2rem;
+    }
     #particles-js{
         width:30vw;
         height: 80vh;
@@ -76,6 +79,9 @@ SE CAMBIA A DISEÑO MOVIL CUANDO SEA MENOR DE 844px */
         margin-bottom: 3vh;
 	}
 
+    .contenedorPrincipal{
+        font-size: 1.5rem;
+    }
 
     .logoredes{
         max-width: 5vh;

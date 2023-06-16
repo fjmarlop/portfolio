@@ -23,6 +23,7 @@ document.getElementById('form')
       document.getElementById("txtMensaje").innerHTML = 
       '<b>¡ Tu mensaje NO se ha enviado correctamente !</b><p>' + JSON.stringify(err) + '</p>'
       abrirVentanaModal();
+      btn.value = 'Enviar';
     });
 });
 
