@@ -3,29 +3,30 @@
 
 <head>
     <title>Fco. Javier Marmolejo López</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/main.css">
-    <link rel="stylesheet" href="./estilos/inicio.css">
-    <script src="./js/script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
     <script src="https://kit.fontawesome.com/4c693cfd5d.js" crossorigin="anonymous"></script>
-</head>
+    <script src="./js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init("T9pJUM7clOnPx9UMF");
+    </script>
 </head>
 
 <body>
     <header class="main-header">
         <a class="main-logo" href="index.html">
-            <strong>
-                Fjmarlop_Dev />
-            </strong>
+            <strong> Fjmarlop_Dev /> </strong>
         </a>
         <nav id="nav" class="main-nav">
             <div class="nav-links">
-                <a class="link-item" href="/index.html">Inicio</a>
-                <a class="link-item" href="/paginas/skills.html">Skills</a>
-                <a class="link-item" href="/paginas/proyectos.html">Trabajos</a>
-                <a class="link-item" href="/paginas/informacion.html">Info</a>
-                <a class="link-item" href="/paginas/contacto.html">Contacto</a>
+                <a class="link-item" href="#inicio">Inicio</a>
+                <a class="link-item" href="#habilidades">Habilidades</a>
+                <a class="link-item" href="#trabajos">Trabajos</a>
+                <a class="link-item" href="#informacion">Info</a>
+                <a class="link-item" href="#contacto">Contacto</a>
             </div>
         </nav>
         <button id="boton" class="button-menu">
@@ -34,52 +35,318 @@
             <span></span>
         </button>
     </header>
-    <main class="contenedor">
-        <section class="contenedorSup">
-            <!-- particles.js container -->
-            <div id="particles-js"></div>
-            <!-- scripts -->
-            <script src="./js/particles.js"></script>
-            <script src="./js/app.js"></script>
-            <!-- stats.js -->
-            <script src="./js/lib/stats.js"></script>
-            <div class="contenedorImagen">
-                <div class="titulo"><span>Desarrollador de aplicaciones Jr.</span></div>
-                <figure><img src="./recursos/image.png" class="foto"></figure>
+    <main>
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <!-- scripts -->
+        <script src="./js/particles.js"></script>
+        <script src="./js/app.js"></script>
+        <!-- stats.js -->
+        <script src="./js/lib/stats.js"></script>
+        <section id="inicio">
+            <div class="contenedor">
+                <div class="inicioSuperior">
+                    <div class="tituloJr">
+                        <span>Desarrollador de aplicaciones Jr.</span>
+                    </div>
+                    <figure><img src="./asset/image.png" class="foto" /></figure>
+                    <div class="rrss">
+                        <a href="#" class="link-item" target="_blank">
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                        </a>
+                        <a href="#" class="link-item" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </a>
+                        <a href="mailto:contacto@fjmarlop.es?subject=subject text" class="link-item">
+                            <i class="fa-solid fa-at fa-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fcojmarmolejolopez/" class="link-item" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                        <a href="https://github.com/fjmarlop" class="link-item" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </a>
+                        <a href="#" class="link-item" target="_blank" title="Descargar Curriculum">
+                            <i class="fa-solid fa-circle-down fa-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="inicioPrincipal">
+                    <h1>HOLA MUNDO</h1>
+                    <h3>Soy Francisco Javier Marmolejo López.</h3>
+                    <article>
+                        Estudio el Ciclo Superior de Diseño de Aplicaciones
+                        Multiplataforma en Córdoba, España. Cuando tenía 10 años mis
+                        padres me compraron mi primer ordenador y desde entonces me quedé
+                        fascinado con este mundo. En una pequeña academia de informática
+                        comencé a conocer MS-DOS, Windows y algunos programas ofimáticos y
+                        comencé a dar mis primeros pasos en programación con Basic, Qbasic
+                        y VisualBasic. Siempre he tenido la curiosidad de aprender y a
+                        programar pequeñas webs, bases de datos y algunos pequeños
+                        programas básicos por mi cuenta. Ahora quiero hacer de esto mi
+                        profesión y comenzar mi carrera como desarrollador.
+                    </article>
+                    <article>
+                        Me considero una persona dinámica, alegre y positiva con voluntad
+                        de aprender y enfrentarme a nuevos retos. Comprometido con mi
+                        trabajo, habituado a trabajar en equipo, con iniciativa, ganas de
+                        aportar y ayudar en nuevos proyectos.
+                    </article>
+                </div>
             </div>
-            <section class="contenedorRedes">
-                <a href="https://www.linkedin.com/in/fcojmarmolejolopez/" class="link-item" target="_blank"><img
-                        src="./recursos/linkedin.png" class="logoredes"></a>
-                <a href="https://github.com/fjmarlop" class="link-item" target="_blank"><img src="./recursos/github.png"
-                        class="logoredes"></a>
-            </section>
         </section>
+        <section id="habilidades">
+            
+            <div class="tituloSeccion">
+                <div class="titulo">
+                    Habilidades />
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="habilidadesPrincipal">
+                    <div class="habilidadesTecnicas">
+                        <h1>Habilidades técnicas</h1>
+                        <h4>Lenguajes de programación que conozco</h4>
+                        <ul>
+                            <li>Java - TypeScript</li>
+                            <li>JavaScript - Php</li>
+                            <li>C# - Phyton</li>
+                            <li>SQL - HTML - Css</li>
+                        </ul>
+                        <p><b>El lenguaje que mas domino es Java</b></p>
+                        <h4>Tegnologías y framework con los que he trabajado</h4>
+                        <ul>
+                            <li>Front-End <i class="fa-solid fa-arrow-right fa-xs"></i> Angular - TypeScript</li>
+                            <li>Back-End <i class="fa-solid fa-arrow-right fa-xs"></i> SpringBoot - Java</li>
+                            <li>Bases de Datos <i class="fa-solid fa-arrow-right fa-xs"></i> MySQl - MariaDB -
+                                PostgreSQL - SqlServer</li>
+                            <li>CSS <i class="fa-solid fa-arrow-right fa-xs"></i> BootStrap</li>
+                            <li>App Mobile <i class="fa-solid fa-arrow-right fa-xs"></i> Android Studio - Java</li>
+                            <li>Control de versiones <i class="fa-solid fa-arrow-right fa-xs"></i> Git - GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="habilidadesSociales">
+                        <h1>Habilidades sociales</h1>
+                        <ul>
+                            <li>Trabajo en equipo</li>
+                            <li>Comunicación</li>
+                            <li>Autoaprendizaje</li>
+                            <li>Resolución de problemas</li>
+                            <li>Trabajo bajo presión</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="trabajos">
+            <div class="tituloSeccion">
+                <div class="titulo">
+                    Trabajos />
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="proyecto">
+                    <div class="logoProyecto">
+                        <figure><img src="./asset/image.png"></figure>
+                        <h3>Portfolio</h3>
+                    </div>
+                    <div class="infoProyecto">
+                        <article>Portfolio personal donde muestro información sobre mis trabajos,
+                            trayectoria profesional y formación académica.
+                        </article>
+                    </div>
+                    <div class="tecnoEnlaces">
+                        <span class="tecnologia">HTML</span>
+                        <span class="tecnologia">CSS</span>
+                        <span class="tecnologia">JavaScript</span>
+                        <a href="https://github.com/fjmarlop/portfolio" target="_blank"><span>GitHub</span></a>
+                        <a href="https://www.fjmarlop.es"><span>Enlace</span></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="logoProyecto">
+                        <figure><img src="./asset/encuestas.png"></figure>
+                        <h3>Encuestas</h3>
+                    </div>
+                    <div class="infoProyecto">
+                        <article>Aplicación para realizar encuestas y recoger los datos. Las preguntas y sus posibles
+                            respuestas estan almacenadas en un JSON en línea. Las respuestas del usuario son recogidas
+                            en formato JSON y almacenadas en línea.
+                        </article>
+                    </div>
+                    <div class="tecnoEnlaces">
+                        <span class="tecnologia">Java</span>
+                        <span class="tecnologia">Android Studio</span>
+                        <a href="https://github.com/fjmarlop/Encuestas" target="_blank"><span>GitHub</span></a>
+                        <a href="https://www.fjmarlop.es/descargas/Encuestas.apk"
+                            download="Encuestas.apk"><span>Enlace</span></a>
 
-        <section class="contenedorPrincipal">
-            <h1> HOLA MUNDO </h1>
-            <h3>Soy Francisco Javier Marmolejo López.</h3>
-            <article>
-                Soy estudiante del Ciclo Superior de Diseño de Aplicaciones Multiplataforma en Córdoba, España.
-                Cuando tenía 10 años mis padres me compraron mi primer ordenador y desde entonces me quedé fascinado con
-                este mundo.
-                En una pequeña academia de informática comencé a conocer MS-DOS, Windows y algunos programas ofimáticos
-                y comencé a dar mis primeros pasos en programación con Basic, Qbasic y VisualBasic pero por diversos
-                motivos no
-                continué con mi formación.
-                Siempre he tenido la curiosidad de aprender y a programar pequeñas webs, bases de datos y algunos
-                pequeños programas básicos por mi cuenta.
-            </article>
-            <article>
-                Me considero una persona dinámica, alegre y positiva con voluntad de aprender y
-                enfrentarme a nuevos retos. Comprometido con mi trabajo, habituado a trabajar en equipo, con
-                iniciativa, ganas de aportar y ayudar en nuevos proyectos.
-            </article>
-            <p>
-                Continua si quieres conocer algo mas de mí.
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="informacion">
+            <div class="tituloSeccion">
+                <div class="titulo">
+                    Info />
+                </div>
+            </div>
+            <div class="contenedor">
+                <section class="experiencia">
+                    <h2>Experiencia laboral</h2>
+                    <hr />
+                    <h3> - Softcontrol S.L., Córdoba // Enero 2023 - Abril 2023.</h3>
+                    Incorporación al proyecto Unigest Web, programa de gestión de empresas
+                    y contabilidad, donde he desempeñado el rol de Full Stack Developer.
+                    En este proyecto, he trabajado en la parte del front-end utilizando
+                    Angular, en la parte del back-end utilizando C#, y como gestor de base
+                    de datos, he utilizado SQL Server.<p> Mi trabajo ha incluido el diseño y
+                        desarrollo de funcionalidades para la interfaz de usuario, la
+                        implementación de lógica empresarial en la parte del back-end, y la
+                        creación y gestión de bases de datos para el almacenamiento de
+                        información.</p>
+                    <p> Además, he tenido la oportunidad de trabajar en equipo,
+                        colaborando con otros desarrolladores para asegurar la calidad y
+                        eficiencia del proyecto. Esta experiencia me ha permitido desarrollar
+                        habilidades en el diseño y desarrollo de aplicaciones Full Stack.
+                        Estoy emocionado de poder seguir creciendo profesionalmente en este
+                        campo y aportar mis habilidades y experiencia a futuros proyectos.</p>
+                    <h3>
+                        - Departamento de Carnicería, El Corte Inglés, Córdoba // Diciembre
+                        2002 - Diciembre 2022.
+                    </h3>
+                    He realizado las labores propias del oficio además de controlar parte
+                    de la gestión del departamento como pedidos diarios, control higiénico
+                    sanitario o gestión básica de personal.
+                    <p>Colaboración en otras áreas de la división de alimentación.</p>
+                </section>
+                <section class="experiencia">
+                    <h2>Formación académica</h2>
+                    <hr />
+                    <h3>- Periodo académico 2022 / 2023</h3>
+                    I.E.S Trassierra – Mod. Distancia – Diseño App Multiplataforma<br />
+                    Módulos en curso: <br />
+                    Sistemas de gestión empresarial – 84 horas - Nota final 9<br />
+                    Programación de Servicios y procesos – 63 horas - Nota final 9<br />
+                    Entornos de desarrollo – 96 horas - Nota final 9
+                    <h3>- Periodo académico 2021 / 2022</h3>
+                    I.E.S Trassierra – Mod. Distancia – Diseño App Multiplataforma<br />
+                    Módulos superados. Acceso a Datos – 105 horas – Nota final 9<br />
+                    Diseño de Interfaces – 147 horas – Nota final 8 <br />
+                    Prog .Multimedia y Disp. Móviles- 84 horas – Nota final 8<br />
+                    Empresa iniciativa emprendedora -84 horas – Nota final 8<br />
+                    Horas libres configuración (PHP) – Nota final 7<br />
+                    <h3>- Periodo académico 2020 / 2021</h3>
+                    I.E.S Trassierra – Mod. Semipresencial – Diseño App Multiplataforma<br />
+                    Módulos superados.<br />
+                    Sistemas Informáticos – 192 horas – Nota final 7<br />
+                    Len. de marcas y sist. de gestión de la info. – 128 horas – Nota final
+                    7<br />
+                    Programación – 256 horas – Nota final 7<br />
+                    Base de Datos – 192 horas – Nota final 9<br />
+                    Formación y orientación laboral – 96 horas – Nota final 8<br />
+                </section>
+        </section>
+        </div>
+        </section>
+        <section id="contacto">
+            <div class="tituloSeccion">
+                <div class="titulo">
+                    contacto />
+                </div>
+            </div>
+            <div class="contenedor">
+                <!-- INICIO MODAL CONFIRMACIÓN -->
+                <div class="fondo_transparente">
+                    <div class="modal">
+                        <div class="modal_titulo"><label id="txtTitulo">GRACIAS !</label></div>
+                        <div class="modal_mensaje"><label id="txtMensaje"><b>¡ Tu mensaje se ha enviado
+                                    correctamente !</b>
+                                <p>Tan pronto como sea posible me pondré en contacto contigo.</p>
+                                <p>Un saludo. Fco Javier Marmolejo López</p>
+                            </label>
+                        </div>
+                        <div class="modal_botones">
+                            <button class="button" id="cerrarModal" name="cerrarModal">ACEPTAR</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN MODAL CONFIRMACIÓN -->
+                <form class="formulario" id="form">
+                    <div>
+                        <label>Introduce tu nombre de contacto <span style="color: #ed088c">*</span></label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <label>Introduce tu email <span style="color: #ed088c">*</span></label><br>
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label>Deja tu mensaje <span style="color: #ed088c">*</span></label><br>
+                        <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <label><span style="color: #ed088c">*</span> campos requeridos</label>
+                    <div class="captcha">
+                        <div class="g-recaptcha" data-sitekey="6LefRpAmAAAAAIOn3cc1ucIq7t_QCL5R2_1Yvtfg"></div>
+                    </div>
+                    <input type="submit" class="button" id="button" name="button" value="enviar"></input>
+                </form>
+                <script src="./js/contacto.js"></script>
+                <section>
+                    <article class="mensajeContacto">
+                        <p>Gracias por visitar mi portfolio. Me complace ver que estás interesad@ en mi trabajo y te
+                            animo a que te
+                            pongas en contacto conmigo</p>
+                        <p>Estoy entusiasmado por la posibilidad de trabajar juntos en emocionantes proyectos y
+                            explorar nuevas
+                            oportunidades. Ya sea que necesites
+                            ayuda con desarrollo web o aplicaciones móviles o con cualquier otra cosa relacionada
+                            con mis habilidades,
+                            estoy aquí para ayudarte a
+                            convertir tus ideas en realidad.</p>
+                        <p>Valoro la colaboración y la comunicación abierta, por lo que siempre estoy disponible
+                            para discutir tus
+                            requerimientos y responder a tus preguntas.
+                            Creo en la importancia de entender tus objetivos y tus necesidades, para brindarte
+                            soluciones personalizadas
+                            que se adapten perfectamente a tus expectativas.</p>
+                        <p>Mi objetivo es superar tus expectativas y ofrecerte un trabajo excepcional. Trabajaré
+                            contigo de cerca,
+                            escuchando tus ideas y
+                            aportando mi experiencia y creatividad para alcanzar resultados sobresalientes juntos.
+                        </p>
+                        <p>No dudes en contactarme a través del formulario de contacto que encontrarás en esta
+                            página,
+                            a través de mis redes sociales o enviándome un correo electrónico directamente a
+                            <a href="mailto:contacto@fjmarlop.es?subject=subject text">contacto@fjmarlop.es</a>.
+                            <br> Responderé a tu mensaje tan pronto como sea posible.
+                        </p>
+                    </article>
+                    <div class="rrss">
+                        <a href="#" class="link-item" target="_blank">
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                        </a>
+                        <a href="#" class="link-item" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </a>
+                        <a href="mailto:contacto@fjmarlop.es?subject=subject text" class="link-item">
+                            <i class="fa-solid fa-at fa-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fcojmarmolejolopez/" class="link-item" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                        <a href="https://github.com/fjmarlop" class="link-item" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </a>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
     <footer>
-        <a href="/paginas/skills.html" class="link-item"><span>Skills <i class="fa-solid fa-arrow-right"></i></span></a>
+        <div>Proyecto realizado por Fco Javier Marmolejo López.</div>
+        <a href="mailto:contacto@fjmarlop.es?subject=subject text" class="link-item">contacto@fjmarlop.es</a>
     </footer>
 </body>
 

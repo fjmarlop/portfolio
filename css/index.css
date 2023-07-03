@@ -1,0 +1,760 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coda&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+body {
+  color: #333333;
+  font-family: Coda;
+  background-image: url(../asset/fondo.jpg)
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 10vh;
+  text-align: justify;
+}
+footer{
+    background-color: #e9e9e9;
+    margin-top: 10vh;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor{
+    position: relative;
+}
+.mensajeContacto {
+  text-align: justify;
+}
+.mensajeContacto p {
+  padding: 1vh;
+}
+.captcha {
+  margin-top: 1vh;
+}
+.g-recaptcha {
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+}
+/* ASPECTO VENTANA MODAL */
+
+.fondo_transparente {
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.226);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+.modal {
+  background: linear-gradient(0deg, white 80%, #ed088c 20%);
+  width: 90vw;
+  height: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 30px;
+  z-index: 5;
+}
+
+.modal_titulo {
+  font-family: Gugi;
+  color: white;
+  margin-top: 1vh;
+  font-size: 1.2rem;
+}
+.modal_mensaje {
+  margin-top: 1vh;
+  padding: 1vw;
+  margin-left: 2vw;
+}
+.modal_mensaje p {
+  margin-top: 1vh;
+}
+.modal_botones {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2vh;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario input,
+textarea {
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  padding: 1vh;
+  border-radius: 2vw;
+  border: #b3b3b3 1px solid;
+  min-width: 90vw;
+}
+.formulario textarea {
+  min-height: 8vh;
+}
+
+.button {
+  background-color: #ed088c;
+  color: white;
+  border-radius: 5vh;
+  padding: 1vh;
+  font-weight: bold;
+  font-family: Gugi;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  min-width: 60vw;
+}
+.experiencia h2 {
+  color: #ed088c;
+}
+
+.experiencia h2,
+h3 {
+  padding: 1vh;
+}
+.experiencia h3 {
+  text-align: start;
+}
+hr {
+  width: 50vw;
+  margin: auto;
+}
+.experiencia p {
+  margin-top: 1vh;
+}
+.proyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  text-align: justify;
+  border: solid 1px #333333;
+  box-shadow: #b3b3b3 4px 4px;
+  margin-bottom: 3vh;
+}
+.logoProyecto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.logoProyecto h3 {
+  color: #ed088c;
+}
+.logoProyecto img {
+  margin-top: 2vh;
+  max-width: 20vw;
+  border-radius: 100%;
+}
+.tecnoEnlaces {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1vw;
+  row-gap: 1vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-family: Gugi;
+}
+.tecnologia {
+  border: #ed088c 2px solid;
+  color: #ed088c;
+  padding: 1.5vw;
+  border-radius: 4vw;
+}
+.tecnoEnlaces a {
+  border: #333333 2px solid;
+  padding: 1.5vw;
+  border-radius: 4vw;
+  text-decoration: none;
+  color: #333333;
+}
+
+.habilidadesPrincipal {
+  display: flex;
+  flex-direction: column;
+}
+.habilidadesPrincipal h1 {
+  color: #ed088c;
+  margin-top: 1vh;
+}
+
+.habilidadesPrincipal h4,
+p {
+  margin-bottom: 1vh;
+}
+.habilidadesPrincipal ul {
+  list-style: none;
+}
+.inicioPrincipal {
+  margin-top: 2vh;
+}
+.inicioPrincipal h1,
+h3 {
+  text-align: center;
+  padding: 2vh;
+}
+.inicioPrincipal h1 {
+  color: #ed088c;
+  font-family: Gugi;
+}
+.inicioPrincipal article {
+  margin-bottom: 2vh;
+}
+.inicioSuperior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tituloJr {
+  color: #ed088c;
+  margin-bottom: 2vh;
+  font-weight: bold;
+  font-family: Gugi;
+  text-align: center;
+}
+.rrss {
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.rrss a {
+  margin-left: 3vw;
+}
+.foto {
+  max-width: 40vw;
+  border-radius: 5vw;
+}
+.tituloSeccion {
+  font-family: Gugi;
+  text-transform: uppercase;
+  min-height: 20vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+/* PARTICULAS */
+#particles-js {
+  position: absolute;
+  z-index: -1;
+  height: 30vw;
+  width: 30vw;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+/* FIN PARTICULAS */
+
+/** DISEÑO DE NAV **/
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9e9e9;
+  padding: 0.7rem 0 0.7rem 0;
+  font-family: Gugi;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.main-logo {
+  color: #ed088c;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-left: 2vw;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin-left: -100%;
+  transition: all 0.2s linear;
+  z-index: 100;
+  background-color: #e9e9e9;
+}
+
+.main-nav.show {
+  margin-left: 0;
+}
+
+.nav-links {
+  background-color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link-item {
+  margin-top: 2rem;
+  color: #ed088c;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+.link-item:hover {
+  color: #333333;
+}
+/** FIN DE NAV **/
+
+/* DISEÑO MOVIL - PORTRAIT  */
+
+@media (max-width: 575.98px) and (orientation: portrait) {
+ 
+    #particles-js{
+        width: 80vw;
+        height: 40vh;
+    }
+  .modal{
+    height: auto;
+  }
+  .modal_titulo{
+    margin-top: 3vh;
+  }
+  .modal_mensaje{
+    margin-top: 3vh;
+  }
+
+  .modal_botones{
+    margin-bottom: 2vh;
+  }
+  .logoProyecto h3 {
+    font-size: 2.5rem;
+  }
+  .titulo {
+    font-size: 3rem;
+  }
+  main {
+    font-size: 1.5rem;
+  }
+
+  /** DISEÑO NAV **/
+  .button-menu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .button-menu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ed088c;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+    margin-right: 4vw;
+  }
+
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ed088c;
+  }
+
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+
+  .button-menu.close span:nth-child(3) {
+    display: none;
+  }
+  /** FIN DISEÑO NAV **/
+}
+
+/* DISEÑO MOVIL - LANDSCAPE */
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: landscape) {
+
+    #particles-js{
+        width: 80vw;
+        height: 40vh;
+    }
+    .modal{
+    height: auto;
+  }
+  .tecnologiasProyecto {
+    margin-top: 6vh;
+  }
+  .enlacesProyecto {
+    margin-top: 8vh;
+    margin-bottom: 6vh;
+  }
+  .logoProyecto h3 {
+    font-size: 3rem;
+  }
+  .logoProyecto img {
+    max-width: 18vw;
+  }
+  .titulo {
+    font-size: 3rem;
+  }
+  .foto {
+    max-width: 18vw;
+  }
+  main {
+    margin-top: 18vh;
+    font-size: 1.8rem;
+  }
+  .tituloJr {
+    font-size: 2rem;
+  }
+  /** DISEÑO NAV **/
+  .button-menu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .button-menu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ed088c;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+    margin-right: 4vw;
+  }
+
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ed088c;
+  }
+
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+
+  .button-menu.close span:nth-child(3) {
+    display: none;
+  }
+  /** FIN DISEÑO NAV **/
+}
+
+/* FIN DISEÑO MOVIL */
+
+/* DISEÑO TABLET - PORTRAIT */
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait) {
+    #particles-js{
+        width: 80vw;
+        height: 40vh;
+    }
+
+  .titulo {
+    font-size: 5rem;
+  }
+  .tituloJr {
+    font-size: 2.2rem;
+  }
+  main {
+    font-size: 2rem;
+  }
+  /** DISEÑO NAV **/
+  .button-menu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column; /* Pondrá un span debajo del otro*/
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .button-menu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ed088c;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+    margin-right: 4vw;
+  }
+
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ed088c;
+  }
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  .button-menu.close span:nth-child(3) {
+    display: none;
+  }
+  /** FIN DISEÑO NAV **/
+}
+
+/* DISEÑO TABLET - LANDSCAPE */
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) and (orientation: landscape) {
+
+    #particles-js{
+        width: 80vw;
+        height: 40vh;
+    }
+  .tecnologiasProyecto {
+    margin-top: 6vh;
+  }
+  .enlacesProyecto {
+    margin-top: 8vh;
+    margin-bottom: 6vh;
+  }
+  .logoProyecto h3 {
+    font-size: 3rem;
+  }
+  .logoProyecto img {
+    max-width: 18vw;
+  }
+  .titulo {
+    font-size: 5rem;
+  }
+  .foto {
+    max-width: 24vw;
+  }
+  .tituloJr {
+    font-size: 2.4rem;
+  }
+  .rrss {
+    margin-top: 3vh;
+  }
+  main {
+    font-size: 2rem;
+  }
+  /** DISEÑO NAV **/
+  .button-menu {
+    display: none;
+  }
+
+  .main-logo {
+    flex-basis: 30%;
+    font-size: 2.5rem;
+  }
+
+  .main-nav {
+    position: static;
+    margin-left: 0;
+    flex-basis: 70%;
+    height: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .link-item {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+  /** FIN DISEÑO NAV **/
+}
+
+/* FIN TABLET */
+
+/* ESCRITORIO */
+
+@media (min-width: 1199.98px) {
+  .formulario {
+    margin-left: 2vw;
+    flex-basis: 140vw;
+    justify-content: center;
+  }
+  .formulario textarea {
+    min-height: 12vh;
+    padding-left: 2vw;
+  }
+  .formulario input,
+  textarea {
+    min-width: 30vw;
+  }
+  .button {
+    min-width: 10vw;
+    font-size: 1.3rem;
+  }
+  .g-recaptcha {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+
+  /* ASPECTO VENTANA MODAL */
+
+  .modal {
+    width: 30vw;
+    height: 30vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal_mensaje {
+    margin-left: 0;
+  }
+
+  .button:hover {
+    background-color: #333333;
+  }
+
+  .experiencia {
+    flex-basis: 50%;
+  }
+
+  hr {
+    width: 25vw;
+    margin: auto;
+  }
+  .tecnoEnlaces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .proyecto {
+    font-size: 1.2rem;
+  }
+  .logoProyecto img {
+    max-width: 5vw;
+  }
+  .logoProyecto h3 {
+    font-size: 3rem;
+  }
+  .tecnologiasProyecto {
+    margin-top: 4vh;
+  }
+  .tecnologia,
+  .tecnoEnlaces a {
+    padding: 1vh;
+  }
+
+  .proyecto {
+    max-width: 30vw;
+  }
+  .habilidadesPrincipal {
+    flex-direction: row;
+  }
+
+  .titulo {
+    font-size: 6rem;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    justify-content: center;
+  }
+  .inicioSuperior {
+    justify-content: center;
+  }
+  .foto {
+    max-width: 17vw;
+  }
+  .tituloJr {
+    font-size: 2.2rem;
+  }
+  .rrss {
+    margin-top: 3vh;
+  }
+  .rrss a {
+    margin-left: 1vw;
+  }
+  main {
+    font-size: 1.5rem;
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+  /** DISEÑO NAV **/
+  .button-menu {
+    display: none;
+  }
+
+  .main-logo {
+    flex-basis: 30%;
+    font-size: 3rem;
+  }
+
+  .main-nav {
+    position: static;
+    margin-left: 0;
+    flex-basis: 70%;
+    height: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .link-item {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+  /** FIN DISEÑO NAV **/
+}
+
+/* FIN ESCRITORIO */
